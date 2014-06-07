@@ -57,3 +57,25 @@ void test_integercompare_given_3_and_2_should_return_1(void)
 
 
 }
+
+
+
+void test_integerswap_given_3_and_2_should_return_2_3(void)
+
+{
+
+ int number[] = {3,2};
+
+ int index1 = 0;
+
+ int index2 = 1;
+
+ integerSwap(number,&index1,&index2);
+
+ UnityAssertEqualNumber((_U_SINT)((2)), (_U_SINT)((number[0])), (((void *)0)), (_U_UINT)39, UNITY_DISPLAY_STYLE_INT);
+
+ UnityAssertEqualNumber((_U_SINT)((3)), (_U_SINT)((number[1])), (((void *)0)), (_U_UINT)40, UNITY_DISPLAY_STYLE_INT);
+
+
+
+}

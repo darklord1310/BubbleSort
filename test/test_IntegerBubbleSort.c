@@ -30,3 +30,13 @@ void test_integercompare_given_3_and_2_should_return_1(void)
 	
 }
 
+void test_integerswap_given_3_and_2_should_return_2_3(void)
+{
+	int number[] = {3,2};
+	int index1 = 0;
+	int index2 = 1;
+	integerSwap(number,&index1,&index2);
+	TEST_ASSERT_EQUAL(2,number[0]);
+	TEST_ASSERT_EQUAL(3,number[1]);
+	
+}

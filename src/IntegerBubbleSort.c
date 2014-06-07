@@ -38,6 +38,12 @@ int integerCompare(void *v1, void *v2)
 */
 void integerSwap(void *array, void *index1, void *index2)
 {
-	
+	int temp;
+	int *value1 = (int *)index1;
+	int *value2 = (int *)index2;
+	int *int_array = (int *)array;
+	temp= int_array[*value2];
+	int_array[*value2] = int_array[*value1];
+	int_array[*value1] = temp;
 
 }
