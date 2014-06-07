@@ -40,3 +40,14 @@ void test_integerswap_given_3_and_2_should_return_2_3(void)
 	TEST_ASSERT_EQUAL(3,number[1]);
 	
 }
+
+void test_integerswap_given_4_and_8_should_return_8_4(void)
+{
+	int number[] = {4,8};
+	int index1 = 0;
+	int index2 = 1;
+	integerSwap(number,&index1,&index2);
+	TEST_ASSERT_EQUAL(8,number[0]);
+	TEST_ASSERT_EQUAL(4,number[1]);
+	
+}

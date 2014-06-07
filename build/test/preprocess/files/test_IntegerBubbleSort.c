@@ -79,3 +79,25 @@ void test_integerswap_given_3_and_2_should_return_2_3(void)
 
 
 }
+
+
+
+void test_integerswap_given_4_and_8_should_return_8_4(void)
+
+{
+
+ int number[] = {4,8};
+
+ int index1 = 0;
+
+ int index2 = 1;
+
+ integerSwap(number,&index1,&index2);
+
+ UnityAssertEqualNumber((_U_SINT)((8)), (_U_SINT)((number[0])), (((void *)0)), (_U_UINT)50, UNITY_DISPLAY_STYLE_INT);
+
+ UnityAssertEqualNumber((_U_SINT)((4)), (_U_SINT)((number[1])), (((void *)0)), (_U_UINT)51, UNITY_DISPLAY_STYLE_INT);
+
+
+
+}

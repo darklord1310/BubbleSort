@@ -34,6 +34,7 @@ extern void test_integercompare_given_3_and_3_should_return_0(void);
 extern void test_integercompare_given_2_and_3_should_return_neg_1(void);
 extern void test_integercompare_given_3_and_2_should_return_1(void);
 extern void test_integerswap_given_3_and_2_should_return_2_3(void);
+extern void test_integerswap_given_4_and_8_should_return_8_4(void);
 
 
 //=======Test Reset Option=====
@@ -53,6 +54,7 @@ int main(void)
   RUN_TEST(test_integercompare_given_2_and_3_should_return_neg_1, 19);
   RUN_TEST(test_integercompare_given_3_and_2_should_return_1, 26);
   RUN_TEST(test_integerswap_given_3_and_2_should_return_2_3, 33);
+  RUN_TEST(test_integerswap_given_4_and_8_should_return_8_4, 44);
 
   return (UnityEnd());
 }

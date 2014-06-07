@@ -15,11 +15,14 @@
 - :test: test_integerswap_given_3_and_2_should_return_2_3
   :line: 33
   :message: ''
+- :test: test_integerswap_given_4_and_8_should_return_8_4
+  :line: 44
+  :message: ''
 :failures: []
 :ignores: []
 :counts:
-  :total: 4
-  :passed: 4
+  :total: 5
+  :passed: 5
   :failed: 0
   :ignored: 0
 :stdout: []

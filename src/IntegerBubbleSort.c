@@ -45,5 +45,4 @@ void integerSwap(void *array, void *index1, void *index2)
 	temp= int_array[*value2];
 	int_array[*value2] = int_array[*value1];
 	int_array[*value1] = temp;
-
 }
