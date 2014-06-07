@@ -98,6 +98,4 @@ void test_integerswap_given_4_and_8_should_return_8_4(void)
 
  UnityAssertEqualNumber((_U_SINT)((4)), (_U_SINT)((number[1])), (((void *)0)), (_U_UINT)51, UNITY_DISPLAY_STYLE_INT);
 
-
-
 }

@@ -1,0 +1,28 @@
+---
+:source:
+  :path: test
+  :file: test_DoubleBubbleSort.c
+:successes:
+- :test: test_doublecompare_given_4p0_and_4p0_should_return_0
+  :line: 12
+  :message: ''
+- :test: test_doublecompare_given_4p1_and_4p2_should_return_neg_1
+  :line: 19
+  :message: ''
+- :test: test_doublecompare_given_5p5_and_2p3_should_return_1
+  :line: 26
+  :message: ''
+- :test: test_doubleswap_given_3p0_and_1p7_should_return_1p7_3p0
+  :line: 33
+  :message: ''
+- :test: test_doubleswap_given_4p1_and_7p8_should_return_7p8_4p1
+  :line: 43
+  :message: ''
+:failures: []
+:ignores: []
+:counts:
+  :total: 5
+  :passed: 5
+  :failed: 0
+  :ignored: 0
+:stdout: []

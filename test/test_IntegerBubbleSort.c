@@ -49,5 +49,4 @@ void test_integerswap_given_4_and_8_should_return_8_4(void)
 	integerSwap(number,&index1,&index2);
 	TEST_ASSERT_EQUAL(8,number[0]);
 	TEST_ASSERT_EQUAL(4,number[1]);
-	
 }

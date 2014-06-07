@@ -8,9 +8,9 @@
 *      v1 is the pointer to the first value
 *	   v2 is the pointer to the second value
 *Return:
-*	   1 if *v >  *v2
-*	   0 if *v == *v2
-*	  -1 if *v <  *v2
+*	   1 if *v1 >  *v2
+*	   0 if *v1 == *v2
+*	  -1 if *v1 <  *v2
 */
 int integerCompare(void *v1, void *v2)
 {

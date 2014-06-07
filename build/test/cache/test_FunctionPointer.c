@@ -86,7 +86,7 @@ void MulInteger(void *v1, void *v2)
 
 
 
-void addDouble(int *v1, int *v2)
+void addDouble(void *v1, void *v2)
 
 {
 
