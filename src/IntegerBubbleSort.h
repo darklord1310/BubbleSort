@@ -3,6 +3,6 @@
 
 int integerCompare(void *v1, void *v2);
 void integerSwap(void *array, void *index1, void *index2);
-
+void singleintegerbubblesort(void *array,void *size,void *length);
 
 #endif // IntegerBubbleSort

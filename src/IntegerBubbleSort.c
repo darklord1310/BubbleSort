@@ -46,3 +46,24 @@ void integerSwap(void *array, void *index1, void *index2)
 	int_array[*value2] = int_array[*value1];
 	int_array[*value1] = temp;
 }
+
+
+// void singleintegerbubblesort(void *array,void *size,void *length)
+// {
+	// int *size_ptr = (int *)size;
+	// int *length_ptr = (int *)length;
+	// int *int_array = (int *)array;
+	
+	// while((*size_ptr-1)!=0)
+	// {
+	// if(int_array[*length_ptr-1] < int_array[*size_ptr-2])
+		// {
+			// *size_ptr-=2;
+			// *length_ptr--;
+			// integerswap(int_array,&size_ptr,&length_ptr);
+		// }
+	
+	// *length_ptr--;
+	// *size_ptr--;
+	// }
+// }
