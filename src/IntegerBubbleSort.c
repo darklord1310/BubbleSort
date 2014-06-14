@@ -36,34 +36,64 @@ int integerCompare(void *v1, void *v2)
 *Precondition:
 *	  indices given must be within bounds of the array
 */
-void integerSwap(void *array, void *index1, void *index2)
+void integerSwap(void *array, int index1, int index2)
 {
 	int temp;
-	int *value1 = (int *)index1;
-	int *value2 = (int *)index2;
 	int *int_array = (int *)array;
-	temp= int_array[*value2];
-	int_array[*value2] = int_array[*value1];
-	int_array[*value1] = temp;
+	
+	temp= int_array[index2];
+	int_array[index2] = int_array[index1];
+	int_array[index1] = temp;
 }
 
+/*
+*Swap a set integers in the array given only for one phase
+*
+*Input:
+*      array is an array of integers
+*	   size is the number of the element in the array which needed to be swap
+*	   length is the length of the array
 
-// void singleintegerbubblesort(void *array,void *size,void *length)
-// {
-	// int *size_ptr = (int *)size;
-	// int *length_ptr = (int *)length;
-	// int *int_array = (int *)array;
+*Precondition:
+*	  indices given must be within bounds of the array
+*/
+void singleintegerbubblesort(void *array,int size,int length)
+{
+	int *int_array = (int *)array;
+	int compare_result;
+	int index1,index2;
 	
-	// while((*size_ptr-1)!=0)
-	// {
-	// if(int_array[*length_ptr-1] < int_array[*size_ptr-2])
-		// {
-			// *size_ptr-=2;
-			// *length_ptr--;
-			// integerswap(int_array,&size_ptr,&length_ptr);
-		// }
+	while((size-1)!=0)
+	{
+		index1 = length-1;
+		index2 = size-2;
+		compare_result = integerCompare(&int_array[index1], &int_array[index2]);
+		
+		if(compare_result == -1 )
+			integerSwap(int_array,index1,index2);
+		  
+	length--;
+	size--;
+	}
+}
+
+/*
+*Fully swap a set integers in the array given only 
+*
+*Input:
+*      array is an array of integers
+*	   length is the length of the array
+
+*Precondition:
+*	  indices given must be within bounds of the array
+*/
+void integerbubblesort(void *array,int length)
+{
+	int size=length;
+	int count;
 	
-	// *length_ptr--;
-	// *size_ptr--;
-	// }
-// }
+	for(count=0;count<length;count++)
+	{
+	singleintegerbubblesort(array,size,length);
+	}
+}

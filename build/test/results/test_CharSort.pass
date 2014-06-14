@@ -1,0 +1,22 @@
+---
+:source:
+  :path: test
+  :file: test_CharSort.c
+:successes:
+- :test: test_charcompare_given_v1_larger_than_v2_should_return_1
+  :line: 12
+  :message: ''
+- :test: test_charcompare_given_v1_and_v2_equal_should_return_0
+  :line: 19
+  :message: ''
+- :test: test_charcompare_given_v1_smaller_than_v2_should_return_neg_1
+  :line: 26
+  :message: ''
+:failures: []
+:ignores: []
+:counts:
+  :total: 3
+  :passed: 3
+  :failed: 0
+  :ignored: 0
+:stdout: []

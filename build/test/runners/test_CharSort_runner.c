@@ -33,7 +33,6 @@ extern void tearDown(void);
 extern void test_charcompare_given_v1_larger_than_v2_should_return_1(void);
 extern void test_charcompare_given_v1_and_v2_equal_should_return_0(void);
 extern void test_charcompare_given_v1_smaller_than_v2_should_return_neg_1(void);
-extern void test_charswap_given_ali_and_abu_should_return_abu_ali(void);
 
 
 //=======Test Reset Option=====
@@ -52,7 +51,6 @@ int main(void)
   RUN_TEST(test_charcompare_given_v1_larger_than_v2_should_return_1, 12);
   RUN_TEST(test_charcompare_given_v1_and_v2_equal_should_return_0, 19);
   RUN_TEST(test_charcompare_given_v1_smaller_than_v2_should_return_neg_1, 26);
-  RUN_TEST(test_charswap_given_ali_and_abu_should_return_abu_ali, 33);
 
   return (UnityEnd());
 }

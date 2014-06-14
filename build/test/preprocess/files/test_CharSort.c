@@ -57,25 +57,3 @@ void test_charcompare_given_v1_smaller_than_v2_should_return_neg_1(void)
 
 
 }
-
-
-
-void test_charswap_given_ali_and_abu_should_return_abu_ali(void)
-
-{
-
- char name[][40] = {"ali","abu"};
-
- int index1 = 1;
-
- int index2 = 2;
-
- charSwap(name,&index1,&index2);
-
- UnityAssertEqualNumber((_U_SINT)(("abu")), (_U_SINT)((name[0])), (((void *)0)), (_U_UINT)39, UNITY_DISPLAY_STYLE_INT);
-
- UnityAssertEqualNumber((_U_SINT)(("ali")), (_U_SINT)((name[1])), (((void *)0)), (_U_UINT)40, UNITY_DISPLAY_STYLE_INT);
-
-
-
-}
