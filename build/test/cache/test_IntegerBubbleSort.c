@@ -249,3 +249,39 @@ void test_integerbubblesort_given_58_55_57_56_54_should_return_54_55_56_57_58(vo
  UnityAssertEqualNumber((_U_SINT)((58)), (_U_SINT)((number[4])), (((void *)0)), (_U_UINT)126, UNITY_DISPLAY_STYLE_INT);
 
 }
+
+
+
+void test_integerbubbleSort_give_empty_should_do_nothing(void)
+
+{
+
+ int number[]= {3,2,1};
+
+ integerbubblesort(number,0);
+
+ UnityAssertEqualNumber((_U_SINT)((3)), (_U_SINT)((number[0])), (((void *)0)), (_U_UINT)133, UNITY_DISPLAY_STYLE_INT);
+
+ UnityAssertEqualNumber((_U_SINT)((2)), (_U_SINT)((number[1])), (((void *)0)), (_U_UINT)134, UNITY_DISPLAY_STYLE_INT);
+
+ UnityAssertEqualNumber((_U_SINT)((1)), (_U_SINT)((number[2])), (((void *)0)), (_U_UINT)135, UNITY_DISPLAY_STYLE_INT);
+
+
+
+}
+
+
+
+void test_integerbubbleSort_give_size_smaller_than_actual_size_should_do_nothing(void)
+
+{
+
+ int number[]= {3,2};
+
+ integerbubblesort(number,1);
+
+ UnityAssertEqualNumber((_U_SINT)((3)), (_U_SINT)((number[0])), (((void *)0)), (_U_UINT)143, UNITY_DISPLAY_STYLE_INT);
+
+ UnityAssertEqualNumber((_U_SINT)((2)), (_U_SINT)((number[1])), (((void *)0)), (_U_UINT)144, UNITY_DISPLAY_STYLE_INT);
+
+}

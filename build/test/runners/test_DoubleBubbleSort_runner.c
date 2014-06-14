@@ -35,6 +35,16 @@ extern void test_doublecompare_given_4p1_and_4p2_should_return_neg_1(void);
 extern void test_doublecompare_given_5p5_and_2p3_should_return_1(void);
 extern void test_doubleswap_given_3p0_and_1p7_should_return_1p7_3p0(void);
 extern void test_doubleswap_given_4p1_and_7p8_should_return_7p8_4p1(void);
+extern void test_singledoublebubblesort_given_9p8_and_3p1_should_return_3p1_9p8(void);
+extern void test_singledoublebubblesort_given_3p2_3p1_4p0_should_return_3p1_3p2_4p0(void);
+extern void test_singledoublebubblesort_given_3p1_2p1_1p1_should_return_1p1_3p1_2p1(void);
+extern void test_singledoublebubblesort_given_0p1_2p2_1p2_0p7_should_return_0p1_0p7_2p2_1p2(void);
+extern void test_doublebubbblesort_given_0p9_0p1_should_return_0p1_0p9(void);
+extern void test_doublebubbblesort_given_0p9_0p1_0p0_should_return_0p0_0p9_0p1(void);
+extern void test_doublebubbblesort_given_5p2_4p2_3p2_2p2_should_return_2p2_3p2_4p2_5p2(void);
+extern void test_doublebubbblesort_given_0p2_0p1_0p5_0p4_1p8_should_return_0p1_0p2_0p4_0p5_1p8(void);
+extern void test_doublebubbleSort_give_empty_should_do_nothing(void);
+extern void test_doublebubbleSort_give_size_smaller_than_actual_size_should_do_nothing(void);
 
 
 //=======Test Reset Option=====
@@ -55,6 +65,16 @@ int main(void)
   RUN_TEST(test_doublecompare_given_5p5_and_2p3_should_return_1, 26);
   RUN_TEST(test_doubleswap_given_3p0_and_1p7_should_return_1p7_3p0, 33);
   RUN_TEST(test_doubleswap_given_4p1_and_7p8_should_return_7p8_4p1, 43);
+  RUN_TEST(test_singledoublebubblesort_given_9p8_and_3p1_should_return_3p1_9p8, 53);
+  RUN_TEST(test_singledoublebubblesort_given_3p2_3p1_4p0_should_return_3p1_3p2_4p0, 61);
+  RUN_TEST(test_singledoublebubblesort_given_3p1_2p1_1p1_should_return_1p1_3p1_2p1, 70);
+  RUN_TEST(test_singledoublebubblesort_given_0p1_2p2_1p2_0p7_should_return_0p1_0p7_2p2_1p2, 79);
+  RUN_TEST(test_doublebubbblesort_given_0p9_0p1_should_return_0p1_0p9, 89);
+  RUN_TEST(test_doublebubbblesort_given_0p9_0p1_0p0_should_return_0p0_0p9_0p1, 98);
+  RUN_TEST(test_doublebubbblesort_given_5p2_4p2_3p2_2p2_should_return_2p2_3p2_4p2_5p2, 108);
+  RUN_TEST(test_doublebubbblesort_given_0p2_0p1_0p5_0p4_1p8_should_return_0p1_0p2_0p4_0p5_1p8, 119);
+  RUN_TEST(test_doublebubbleSort_give_empty_should_do_nothing, 130);
+  RUN_TEST(test_doublebubbleSort_give_size_smaller_than_actual_size_should_do_nothing, 139);
 
   return (UnityEnd());
 }

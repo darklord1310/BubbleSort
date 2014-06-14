@@ -18,11 +18,41 @@
 - :test: test_doubleswap_given_4p1_and_7p8_should_return_7p8_4p1
   :line: 43
   :message: ''
+- :test: test_singledoublebubblesort_given_9p8_and_3p1_should_return_3p1_9p8
+  :line: 53
+  :message: ''
+- :test: test_singledoublebubblesort_given_3p2_3p1_4p0_should_return_3p1_3p2_4p0
+  :line: 61
+  :message: ''
+- :test: test_singledoublebubblesort_given_3p1_2p1_1p1_should_return_1p1_3p1_2p1
+  :line: 70
+  :message: ''
+- :test: test_singledoublebubblesort_given_0p1_2p2_1p2_0p7_should_return_0p1_0p7_2p2_1p2
+  :line: 79
+  :message: ''
+- :test: test_doublebubbblesort_given_0p9_0p1_should_return_0p1_0p9
+  :line: 89
+  :message: ''
+- :test: test_doublebubbblesort_given_0p9_0p1_0p0_should_return_0p0_0p9_0p1
+  :line: 98
+  :message: ''
+- :test: test_doublebubbblesort_given_5p2_4p2_3p2_2p2_should_return_2p2_3p2_4p2_5p2
+  :line: 108
+  :message: ''
+- :test: test_doublebubbblesort_given_0p2_0p1_0p5_0p4_1p8_should_return_0p1_0p2_0p4_0p5_1p8
+  :line: 119
+  :message: ''
+- :test: test_doublebubbleSort_give_empty_should_do_nothing
+  :line: 130
+  :message: ''
+- :test: test_doublebubbleSort_give_size_smaller_than_actual_size_should_do_nothing
+  :line: 139
+  :message: ''
 :failures: []
 :ignores: []
 :counts:
-  :total: 5
-  :passed: 5
+  :total: 15
+  :passed: 15
   :failed: 0
   :ignored: 0
 :stdout: []

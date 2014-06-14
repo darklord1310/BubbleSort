@@ -125,3 +125,21 @@ void test_integerbubblesort_given_58_55_57_56_54_should_return_54_55_56_57_58(vo
 	TEST_ASSERT_EQUAL(57,number[3]);
 	TEST_ASSERT_EQUAL(58,number[4]);
 }
+
+void test_integerbubbleSort_give_empty_should_do_nothing(void)
+{
+	int number[]= {3,2,1};
+	integerbubblesort(number,0);
+	TEST_ASSERT_EQUAL(3,number[0]);
+	TEST_ASSERT_EQUAL(2,number[1]);
+	TEST_ASSERT_EQUAL(1,number[2]);
+	
+}
+
+void test_integerbubbleSort_give_size_smaller_than_actual_size_should_do_nothing(void)
+{
+	int number[]= {3,2};
+	integerbubblesort(number,1);
+	TEST_ASSERT_EQUAL(3,number[0]);
+	TEST_ASSERT_EQUAL(2,number[1]);
+}

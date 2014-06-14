@@ -43,6 +43,8 @@ extern void test_integerbubblesort_given_2_1_should_return_1_2(void);
 extern void test_integerbubblesort_given_66_33_11_should_return_11_33_66(void);
 extern void test_integerbubblesort_given_3_2_1_0_should_return_0_1_2_3(void);
 extern void test_integerbubblesort_given_58_55_57_56_54_should_return_54_55_56_57_58(void);
+extern void test_integerbubbleSort_give_empty_should_do_nothing(void);
+extern void test_integerbubbleSort_give_size_smaller_than_actual_size_should_do_nothing(void);
 
 
 //=======Test Reset Option=====
@@ -71,6 +73,8 @@ int main(void)
   RUN_TEST(test_integerbubblesort_given_66_33_11_should_return_11_33_66, 99);
   RUN_TEST(test_integerbubblesort_given_3_2_1_0_should_return_0_1_2_3, 108);
   RUN_TEST(test_integerbubblesort_given_58_55_57_56_54_should_return_54_55_56_57_58, 118);
+  RUN_TEST(test_integerbubbleSort_give_empty_should_do_nothing, 129);
+  RUN_TEST(test_integerbubbleSort_give_size_smaller_than_actual_size_should_do_nothing, 139);
 
   return (UnityEnd());
 }

@@ -42,11 +42,17 @@
 - :test: test_integerbubblesort_given_58_55_57_56_54_should_return_54_55_56_57_58
   :line: 118
   :message: ''
+- :test: test_integerbubbleSort_give_empty_should_do_nothing
+  :line: 129
+  :message: ''
+- :test: test_integerbubbleSort_give_size_smaller_than_actual_size_should_do_nothing
+  :line: 139
+  :message: ''
 :failures: []
 :ignores: []
 :counts:
-  :total: 13
-  :passed: 13
+  :total: 15
+  :passed: 15
   :failed: 0
   :ignored: 0
 :stdout: []
